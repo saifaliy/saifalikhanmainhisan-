@@ -5,7 +5,6 @@ import { QuizSection } from './components/QuizSection';
 import { StorySection } from './components/StorySection';
 import { ProposalSection } from './components/ProposalSection';
 import { FinalSection } from './components/FinalSection';
-import { MusicPlayer } from './components/MusicPlayer';
 import { FallingPetals } from './components/FallingPetals';
 
 enum AppState {
@@ -33,7 +32,6 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen cinematic-bg text-rose-50 font-sans relative overflow-hidden">
-      <MusicPlayer />
       {showPetals && <FallingPetals />}
       
       <div className="relative z-20">
